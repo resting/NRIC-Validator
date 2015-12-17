@@ -41,9 +41,9 @@ function generateChecksum(prefix, nric) {
 function validateChecksum(prefix, nric, suffix) {
     checkSum = generateChecksum(prefix, nric);
     if (typeof suffix != "string" || (sfTable.indexOf(suffix) <= -1 && tgTable.indexOf(suffix) <= -1) || suffix != checkSum) {
-        return "The Suffix Character is Invalid";
+        return false;
     }
     else {
-        return "The Suffix Character is Correct";
+        return true;
     }
 };
