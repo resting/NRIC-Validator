@@ -1,3 +1,18 @@
+# Forked changes
+
+Forked to make generating of NRIC for testing and development more convenient.
+
+## Usage
+```
+node app 1234567
+```
+Where `1234567` is the 7 digit NRIC number.
+
+Returns
+```
+S1234567D
+```
+
 # NRIC-Validator
 Checksum Generator for NRICs
 Can be used for Webapps to validate NRICs by generating Checksums
